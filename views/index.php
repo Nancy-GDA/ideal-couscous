@@ -7,14 +7,14 @@
       href="https://fonts.googleapis.com/css?family=Heebo"
       rel="stylesheet"
     />
-    <link href="../proyecto/css/index.css" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" />
     <link rel="icon" />
   </head>
   <body>
     <header class="header-contenedor">
       <nav class="menu-contenedor">
         <ul class="item-menu">
-          <img id="logo" src="../proyecto/imagenes/logo.jpg"" alt="logo"/>
+          <img id="logo" src="imagenes/logo.jpg"" alt="logo"/>
           <h3>Rock´s Burgues</h3>
           <li>Menu</li>
           <li>Categorias</li>
@@ -44,7 +44,7 @@
         <article class="comidas">
           <figure>
             <img
-              src="../proyecto/imagenes/<?php echo $dish->image;?>"
+              src="imagenes/<?php echo $dish->image;?>"
               width="45px"
               width="38px"
               alt="entradas"
