@@ -1,0 +1,171 @@
+:root {
+    --primary:#009688;
+    --light:#32DFDB;
+    --dark:#007968;
+    --accent:#8BC34A;
+    --primary-text:#212121;
+    --secondary:#757575;
+    --divider:#BDBDBD;
+}
+
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.header-contenedor{
+    border: 1px solid black;
+    background: var(--dark);
+}
+.item-menu{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    color: white;
+    font-family: 'Heebo', sans-serif;
+    font-size: 16px;
+    list-style: none;   
+}
+.item-menu h3{
+    padding:15px;
+    color: white;
+    font-family: 'Heebo', sans-serif;
+    font-size:25px;  
+}   
+#logo{
+    width: 55px;
+    height: 45px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 20px 0 15px;
+    border-radius: 10px;
+}
+.item-menu li  {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 0 85px ; 
+}
+
+#usuario{
+    width: 45px;
+    height: 35px;
+    display: flex;  
+}
+.usuario{
+    display: flex;
+    flex-wrap: wrap;
+    height: 70px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 350px; 
+}
+#entradas{
+    margin: 30px 30px;
+    padding: 15px 20px;
+    width: 335px;
+    height: 245px;
+}
+#postres{
+    margin: 30px 30px;
+    padding: 15px 20px;
+    width: 335px;
+    height: 245px;
+}
+#snacks{
+    margin: 30px 30px;
+    padding: 15px 20px;
+    width: 335px;
+    height: 245px;
+}
+.banner{
+     height: 400px;
+     width: 100%;
+     background-image: url("../imagenes/banner.jpg");
+     background-position:0 -85px;
+     background-repeat: no-repeat;
+     background-size: cover;    
+}
+.botones-banner{
+    display: flex;
+    height: 400px;
+    width: 100%;
+    justify-content: center;
+    justify-items: flex-end;
+    align-items: flex-end;
+    padding: 15px; 
+}
+#btn-iniciar{
+    line-height: 1.5;
+    margin: 25px;
+    padding: 7.4px;
+    font-family: 'Heebo', sans-serif;
+    color:black;
+    border:1.5px solid #007968;
+    border-radius: 10px;
+    background-color:lightgray;   
+}
+#btn-registro{
+    line-height: 1.5;
+    font-family:'Heebo', sans-serif ;
+    color:black;
+    border: 1.5px solid #007968;
+    margin: 25px;
+    padding: 7.4px;
+    background-color: lightgrey;
+    border-radius:10px;   
+}
+.menu-tiempos{
+    display: flex;
+    justify-content: space-between;
+}
+ .comidas h3{
+    display: flex;
+    font-size: 25px;
+    justify-content: center;   
+}
+.comidas p{
+    display: flex;
+    text-align: center;
+    margin: 20px 40px;
+    font-family: 'Heebo', sans-serif;
+    font-size:15px;
+}
+.comidas .snack{
+
+    display: flex;
+    justify-content: center;
+    margin: 20px 45px;
+}
+.comidas a{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 13px 0;
+    font-size: 20px;
+    color: rgba(129, 31, 6, 0.952);     
+    font-family: 'Heebo', sans-serif;
+}
+.footer{
+    display: flex;
+    height: 110px;
+    width: 100%;
+    background: var(--dark);
+    font-family:'Heebo', sans-serif;
+    color:whitesmoke;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+ .footer h3{
+     font-size: 25px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align:center;
+     flex-direction: column;
+ }
+

@@ -1,0 +1,47 @@
+<!DOCtype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Registro</title>
+    <link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet">
+    <link rel="stylesheet" href="../proyecto/css/registro.css">
+</head>
+<body>
+    <section class="registro">
+        <form class="formulario" >
+            <section class="datos">
+                <h2>Registro</h2>
+                <label>Nombre de usuario</label>
+                <input type="text" name="usuario" id="usuario"><br>
+                <label>Constraseña</label>
+                <input type="password" name="contraseña" id="contraseña"> <br>
+                <label>Escribe nuevamente la contraseña</label>
+                <input type="password" name="confirmacion-contraseña" id="configuracion-contraseña"> <br>
+                <label>Correo Electronico</label>
+                <input type="email" name="email" id="email"><br>
+                <label>Nombre </label>
+                <input type="text" name="nombre" id="nombre"><br>
+                <label>Apellido Paterno</label>
+                <input type="text" name="a-paterno" id="a-paterno"><br>
+                <label>Apellido  Materno</label>
+                <input type="text" name="a-materno" id="a-materno"><br>
+                <label>Domicilio</label>
+                <input type="text" name="domicilio" id="domicilio"><br>
+               
+                <div class="tipo-pago">
+                    <p>Metodo  de pago</p> <br>
+                    <label >Efectivo</label>
+                    <input type="radio" name="efectivo" id="efectivo">
+                    <label >Credito</label>
+                    <input type="radio" name="tar-credito" id="credito">
+                    <label >Paypal</label>
+                    <input type="radio" name="paypal" id="paypal">
+                    <label >Puntos</label>
+                    <input type="radio" name="puntos" id="puntos">
+                </div>
+                <input type="button" value="Registrar" id="btn-enviar">
+            </section>  
+        </form>
+    </section>    
+</body>
+</html>

@@ -1,0 +1,68 @@
+:root {
+    --primary:#009688;
+    --light:#32DFDB;
+    --dark:#007968;
+    --accent:#8BC34A;
+    --primary-text:#212121;
+    --secondary:#757575;
+    --divider:#BDBDBD;
+}
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.session{
+    margin: 145px  490px;
+    width: 290px;
+    max-width: 350px;
+    background:lightgray;
+    padding: 25px;
+    border: 2px solid var(--primary);
+}
+#logo{
+    width: 65px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 87px;
+    border-radius: 10px;
+}
+h2{
+    text-align: center;
+    margin-bottom: 25px;
+    color:var(--dark
+    );
+}
+input{
+    display: block;
+    padding: 5px;
+    width: 100%;
+    margin: 25px 0;
+    font-family: 'Heebo', sans-serif;
+    font-size: 21px;
+}
+#btn-iniciar{
+    border: 0;
+    background: var(--primary);
+    opacity: 0.7;
+    cursor: pointer;
+    border-radius: 23px;
+    margin-bottom: 0;
+    color: white;
+}
+#btn-iniciar :hover{
+    opacity: 1;
+}
+#btn-iniciar :active{
+    transform: scale(0.95);
+}
+
+/* position tiene 4 elementos ,fixed,relative y absolute
+top,left,right (derecha) y bottom(abajo)
+viupot 
+backgraon-color  con rgba la A es de opacidad o intencidad del color
+filter :blur(la cantidad de pixeles)
+
+*/

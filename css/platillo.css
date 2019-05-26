@@ -1,0 +1,488 @@
+:root {
+    --primary:#009688;
+    --light:#32DFDB;
+    --dark:#007968;
+    --accent:#8BC34A;
+    --primary-text:#212121;
+    --secondary:#757575;
+    --divider:#BDBDBD;
+}
+
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.header-contenedor{
+    border: 1px solid black;
+    background: var(--dark);
+}
+.item-menu{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    color: white;
+    font-family: 'Heebo', sans-serif;
+    font-size: 16px;
+    list-style: none;   
+}
+.item-menu h3{
+    padding:10px;
+    color: white;
+    font-family: 'Heebo', sans-serif;
+    font-size:25px;  
+    text-align: center;
+}   
+#logo{
+    width: 55px;
+    height: 45px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 20px 0 15px;
+    border-radius: 10px;
+}
+.item-menu li  {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 0 65px ; 
+}
+#usuario{
+    width: 45px;
+    height: 35px;
+    display: flex;  
+}
+.usuario{
+    display: flex;
+    flex-wrap: wrap;
+    height: 70px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 475px; 
+}
+.platillo{
+    font-family: 'Heebo', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    padding: 15px;  
+}
+.banner{
+    background-image: url(../imagenes/hamburguesa.jpg);
+    height: 350px;
+    width: 100%;
+    background-position: 0 -125px;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+#hS{
+    display:flex;
+    width: 275px;
+    height: 220px;
+    font-family: 'Heebo', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    padding: 15px;  
+    margin: 35px 10px 25px 35px;
+    
+}
+#p-hawallana{
+    width: 275px;
+    height: 220px;
+    font-family: 'Heebo', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    padding: 15px;
+    margin: 35px 10px 25px 35px;  
+}
+#hm{
+    width: 275px;
+    height: 220px;
+    font-family: 'Heebo', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    padding: 15px; 
+    margin: 35px 10px 25px 35px;
+}
+
+article{
+    /*box-shadow: none;*/
+    border: 1px solid black;
+}
+.comida-1 p{
+    display: flex;
+    text-align: center;
+    margin: 20px 40px;
+    font-family: 'Heebo', sans-serif;
+    font-size:17px;    
+}
+.comida-1 h3{
+    display: flex;
+    font-size: 20px;
+    font-family:'Heebo', sans-serif; 
+    text-align: center;
+    justify-content: center;
+    
+}
+.comida-1{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 60px 40px 60px;
+    padding: 15px  15px;
+}
+.comida-1 label{
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    text-align: center;
+}
+.comida-2 p{
+    display: flex;
+    text-align: center;
+    margin: 20px 40px;
+    font-family: 'Heebo', sans-serif;
+    font-size:17px;
+    
+}
+.comida-2 h3{
+    display: flex;
+    font-size: 20px;
+    font-family:'Heebo', sans-serif; 
+    text-align: center;
+    justify-content: center;
+}
+.comida-2{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 40px;
+    padding: 15px 15px;
+}
+.comida-2 label{
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    text-align: center;
+}
+#hv{
+    width: 275px;
+    height: 220px;
+    font-family: 'Heebo', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    padding: 15px;   
+    margin:35px 10px 25px 35px
+}
+#p-mexicana{
+    width: 275px;
+    height: 220px;
+    font-family: 'Heebo', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    padding: 15px; 
+    margin:35px 10px 25px 35px;
+}#hh{
+    width: 275px;
+    height: 220px;
+    font-family: 'Heebo', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    padding: 15px;
+    margin: 35px 10px 25px 35px;  
+}
+.comida-3 p{
+    display: flex;
+    text-align: center;
+    margin: 20px 40px;
+    font-family: 'Heebo', sans-serif;
+    font-size:17px;
+    
+}
+.comida-3 h3{
+    display: flex;
+    font-size: 20px;
+    font-family:'Heebo', sans-serif;
+    text-align: center;
+    justify-content: center;
+}
+.comida-3{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 40px;
+    padding: 15px 15px;   
+}
+.comida-3 label{
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    text-align: center;
+}
+#marina{
+    width: 275px;
+    height: 220px;
+    font-family: 'Heebo', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    padding: 15px;
+    margin: 35px 10px 25px 35px;
+}
+#lover{
+    width: 275px;
+    height: 220px;
+    font-family: 'Heebo', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    padding: 15px ;
+    margin:35px 10px 25px 35px;
+}
+#pizza2{
+    width: 275px;
+    height: 220px;
+    font-family: 'Heebo', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    padding: 15px ;
+    margin: 35px 10px 25px 35px;  
+}
+.banner-snack{
+    background-image: url(../imagenes/snacks.jpg);
+    height: 350px;
+    width: 100%;
+    background-position: 0 -395px;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+#bbq{
+    width: 275px;
+    height: 220px;
+    font-family: 'Heebo', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    padding: 15px ;
+    margin:35px 10px 25px 35px;
+}
+#gajo{
+    width: 275px;
+    height: 220px;
+    font-family: 'Heebo', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    padding: 15px ;
+    margin:35px 10px 25px 35px;
+}
+#mexicanas{
+    width: 275px;
+    height: 220px;
+    font-family: 'Heebo', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    padding: 15px ;
+    margin:35px 10px 25px 35px;  
+}
+.snacks p{
+    display: flex;
+    text-align: center;
+    margin: 20px 40px;
+    font-family: 'Heebo', sans-serif;
+    font-size:17px;    
+}
+.snacks h3{
+    display: flex;
+    font-size: 20px;
+    font-family:'Heebo', sans-serif;
+    text-align: center;
+    justify-content: center;
+}
+.snacks label{
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    text-align: center;
+}
+.snacks{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 60px 40px 60px;
+    padding: 15px  15px;  
+}
+.snacks-2 p{
+    display: flex;
+    text-align: center;
+    margin: 20px 40px;
+    font-family: 'Heebo', sans-serif;
+    font-size:17px;    
+}
+.snacks-2 h3{
+    display: flex;
+    font-size: 20px;
+    font-family:'Heebo', sans-serif;
+    text-align: center;
+    justify-content: center;
+}
+.snacks-2 label{
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    text-align: center;
+}
+.snacks-2{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 60px 40px 60px;
+    padding: 15px  15px;  
+}
+#mixta{
+    width: 275px;
+    height: 220px;
+    font-family: 'Heebo', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    padding: 15px ;
+    margin:35px 10px 25px 35px;  
+}
+#bufalo{
+    width: 275px;
+    height: 220px;
+    font-family: 'Heebo', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    padding: 15px ;
+    margin:35px 10px 25px 35px;
+}
+#dedos{
+    width: 275px;
+    height: 220px;
+    font-family: 'Heebo', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    padding: 15px ;
+    margin:35px 10px 25px 35px;  
+}
+.banner-postres{
+    background-image: url(../imagenes/banner-postre.jpg);
+    height: 350px;
+    width: 100%;
+    background-position: 0 -195px;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+.postres p{
+    display: flex;
+    text-align: center;
+    margin: 20px 40px;
+    font-family: 'Heebo', sans-serif;
+    font-size:17px;    
+}
+.postres h3{
+    display: flex;
+    font-size: 20px;
+    font-family:'Heebo', sans-serif;
+    text-align: center;
+    justify-content: center;
+}
+.postres label{
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    text-align: center;
+}
+.postres{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 60px 40px 60px;
+    padding: 15px  15px;  
+}
+#crepa{
+    width: 275px;
+    height: 220px;
+    font-family: 'Heebo', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    padding: 15px ;
+    margin:35px 10px 25px 35px;  
+}
+#malteadas{
+    width: 275px;
+    height: 220px;
+    font-family: 'Heebo', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    padding: 15px ;
+    margin:35px 10px 25px 35px;
+}
+.postres-2 p{
+    display: flex;
+    text-align: center;
+    margin: 20px 40px;
+    font-family: 'Heebo', sans-serif;
+    font-size:17px;    
+}
+.postres-2 h3{
+    display: flex;
+    font-size: 20px;
+    font-family:'Heebo', sans-serif;
+    text-align: center;
+    justify-content: center;
+}
+.postres-2 label{
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    text-align: center;
+}
+.postres-2{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 60px 40px 60px;
+    padding: 15px  15px;  
+}
+#clericot{
+    width: 275px;
+    height: 220px;
+    font-family: 'Heebo', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    padding: 15px ;
+    margin:35px 10px 25px 35px; 
+}
+#hotcakes{
+    width: 275px;
+    height: 220px;
+    font-family: 'Heebo', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    padding: 15px ;
+    margin:35px 10px 25px 35px;  
+}
+#oreo{
+    width: 275px;
+    height: 220px;
+    font-family: 'Heebo', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    padding: 15px ;
+    margin:35px 10px 25px 35px;  
+}
+.footer{
+    display: flex;
+    height: 110px;
+    width: 100%;
+    background: var(--dark);
+    font-family:'Heebo', sans-serif;
+    color:whitesmoke;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+ .footer h3{
+     display: flex;
+     font-size: 25px;
+     justify-content: center;
+     font-family:'Heebo', sans-serif;
+     align-items: center;
+     text-align:center;
+     flex-direction: column;
+ }
+
+
+
