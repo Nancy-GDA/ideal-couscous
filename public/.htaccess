@@ -5,6 +5,6 @@ RewriteCond %{REQUEST_FILENAME} !-F
 
 RewriteCond %{REQUEST_URI} !css/([^\s?]*)$
 RewriteCond %{REQUEST_URI} !js/([^\s?]*)$
-RewriteCond %{REQUEST_URI} !assets/imagenes/([^\s?]*)$
+RewriteCond %{REQUEST_URI} !images/([^\s?]*)$
 
 RewriteRule ^ index.php [QSA,L]
