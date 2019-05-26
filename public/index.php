@@ -35,11 +35,13 @@ $map->get('index', '/', [
 ]);
 
 
-$map->get('platillos', '/platillos/{id}', [
-    'controller' => 'App\Controllers\PlatillosController',
-    'action' => 'indexAction'
-]);
-
+$map->get('platillos', '/platillos/{id}', function($request){
+    return[
+        'controller' => 'App\Controllers\PlatillosController',
+        'action' => 'indexAction',
+        "index" => $request->getAttribute('id')
+    ];
+});
 
 // Validate if route exist
 $matcher = $router->getMatcher();
@@ -49,10 +51,12 @@ $route = $matcher->match($request);
 // If route not exist send a 400 page not Found
 if(!$route)
     return require '../views/errors/notfound.html';
-
+    
+// return var_dump($route);
 $handlerData = $route->handler;
 $controllerName = new $handlerData['controller'];
 $actionName = $handlerData['action'];
 
+// initialize class
 $controller = new $controllerName;
 $controller->$actionName($request);

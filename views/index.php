@@ -7,7 +7,7 @@
       href="https://fonts.googleapis.com/css?family=Heebo"
       rel="stylesheet"
     />
-    <link href="css/index.css" rel="stylesheet" />
+    <link href="public/css/index.css" rel="stylesheet" />
     <link rel="icon" />
   </head>
   <body>
@@ -44,7 +44,7 @@
         <article class="comidas">
           <figure>
             <img
-              src="imagenes/<?php echo $dish->image;?>"
+              src="public/assets/imagenes/<?php echo $dish->image;?>"
               width="45px"
               width="38px"
               alt="entradas"
