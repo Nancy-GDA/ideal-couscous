@@ -14,7 +14,7 @@
     <header class="header-contenedor">
       <nav class="menu-contenedor">
         <ul class="item-menu">
-          <img id="logo" src="public/assets/images/logo.jpg"" alt="logo"/>
+          <img class="logo" src="public/assets/images/logo.jpg"" alt="logo"/>
           <h3>Rock´s Burgues</h3>
           <li>Menu</li>
           <li>Categorias</li>
@@ -22,7 +22,6 @@
           <li>Carrito de compras</li>
           <div class="usuario">
             <img
-              id="usuario"
               src="https://img.icons8.com/ios/50/000000/contacts-filled.png"
             />
             <li>Usuario</li>
@@ -32,27 +31,22 @@
     </header>
     <section class="banner">
       <div class="botones-banner">
-        <button id="btn-iniciar" onclick="location.href='/src/login.html'">
-          Iniciar Sessión
-        </button>
-        <a href=""></a>
+        <button id="btn-iniciar"> Iniciar Sessión </button>
         <button id="btn-registro">Registro</button>
       </div>
     </section>
     <section class="menu-tiempos">
       <?php foreach($foodDishes as $dish): ?>
         <article class="comidas">
-          <figure>
+          <figure class="comidas-img">
             <img
               src="public/assets/images/<?php echo $dish['image'];?>"
-              width="45px"
-              width="38px"
-              alt="entradas"
+              alt="<?php echo $dish['image'];?>"
             />
           </figure>
           <h3><?php echo $dish['title'];?></h3>
           <p><?php echo $dish['description'];?></p>
-          <a href="platillo/{<?php echo $dish['id'];?>}" >Ver platillos</a>
+          <a href="platillo/<?php echo $dish['id'];?>" >Ver platillos</a>
         </article>
       <?php endforeach; ?>
     </section>
@@ -60,5 +54,6 @@
       <h3>Contactanos</h3>
       <p>Lamanos al 01-800-2110-rock</p>
     </footer>
+    <script src="public/js/home.js"></script>
   </body>
 </html>

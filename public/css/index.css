@@ -33,7 +33,8 @@
   font-family: "Heebo", sans-serif;
   font-size: 25px;
 }
-#logo {
+
+.logo {
   width: 55px;
   height: 45px;
   display: flex;
@@ -49,11 +50,6 @@
   margin: 0 85px;
 }
 
-#usuario {
-  width: 45px;
-  height: 35px;
-  display: flex;
-}
 .usuario {
   display: flex;
   flex-wrap: wrap;
@@ -63,6 +59,13 @@
   align-items: center;
   margin: 0 0 0 350px;
 }
+
+.usuario img {
+  width: 45px;
+  height: 35px;
+  display: flex;
+}
+
 #entradas {
   margin: 30px 30px;
   padding: 15px 20px;
@@ -122,23 +125,28 @@
   display: flex;
   justify-content: space-between;
 }
-.comidas h3 {
+
+.comidas {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1em 0;
+}
+.comidas h3 {
   font-size: 25px;
-  justify-content: center;
 }
 .comidas p {
-  display: flex;
   text-align: center;
   margin: 20px 40px;
   font-family: "Heebo", sans-serif;
   font-size: 15px;
 }
-.comidas .snack {
-  display: flex;
-  justify-content: center;
-  margin: 20px 45px;
+
+.comidas-img img {
+  width: 300px;
+  height: 200px;
 }
+
 .comidas a {
   display: flex;
   justify-content: center;
@@ -166,4 +174,43 @@
   align-items: center;
   text-align: center;
   flex-direction: column;
+}
+
+#modal-login.modal-container.active {
+  display: flex;
+}
+
+#modal-registry.modal-container.active {
+  display: flex;
+}
+
+.modal-container {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-body {
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  width: 35%;
+  border-radius: 7px;
+  background-color: #fff;
+}
+
+.modal-form {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 70%;
+}
+
+.modal-form input {
+  margin-top: 1rem;
 }

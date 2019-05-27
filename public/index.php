@@ -4,8 +4,10 @@
 require_once "../vendor/autoload.php";
 
 use Aura\Router\RouterContainer;
+use App\Connection\Connection;
 
-
+// Initialize database connection
+new Connection();
 /**
  * @description
  * PHP contains a plethora of information about the incoming request, 
@@ -25,7 +27,6 @@ $request = Zend\Diactoros\ServerRequestFactory::fromGlobals(
 $router = new RouterContainer();
 $map = $router->getMap();
 
-
 /**
  * Routes
  */
@@ -34,7 +35,6 @@ $map->get('index', '/', [
     'action' => 'indexAction'
 ]);
 
-
 $map->get('platillos', '/platillos/{id}', function($request){
     return[
         'controller' => 'App\Controllers\PlatillosController',
@@ -42,6 +42,11 @@ $map->get('platillos', '/platillos/{id}', function($request){
         "index" => $request->getAttribute('id')
     ];
 });
+
+$map->post("login", '/login', [
+    "controller" => 'App\Controllers\IndexController',
+    "action" => 'login'
+]);
 
 // Validate if route exist
 $matcher = $router->getMatcher();
